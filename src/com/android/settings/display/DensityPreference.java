@@ -78,7 +78,7 @@ public class DensityPreference extends CustomEditTextPreferenceCompat {
                 final int minDimensionPx = Math.min(metrics.widthPixels, metrics.heightPixels);
                 final int newDensity = DisplayMetrics.DENSITY_MEDIUM * minDimensionPx / newSwDp;
                 final int densityDpi = Math.max(newDensity, 120);
-                DisplayDensityUtils.setForcedDisplayDensity(Display.DEFAULT_DISPLAY, densityDpi);
+                DisplayDensityUtils.setForcedDisplayDensity(Display.DEFAULT_DISPLAY, 410);
             } catch (Exception e) {
                 // TODO: display a message instead of silently failing.
                 Slog.e(TAG, "Couldn't save density", e);
